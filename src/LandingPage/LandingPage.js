@@ -41,7 +41,7 @@ const LadingPage = (props) => {
         onClick={FetchUserList}
         endIcon={<AutoModeIcon />}
       >
-        {fetching ? `Fetching`: `Fetch`} data
+        Fetch data
       </LoadingButton>
     </Box>
   );
