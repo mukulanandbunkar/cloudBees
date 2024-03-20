@@ -1,4 +1,4 @@
-import { Box,  Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import LoadingButton from "@mui/lab/LoadingButton";
 import "./UserCard.scss";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
