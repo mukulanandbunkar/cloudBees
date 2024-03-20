@@ -32,6 +32,7 @@ const LadingPage = (props) => {
 
   return (
     <Box className="landing-page">
+      <Typography variant="h4" className="landing-page__my-name">MUKUL ANAND BUNKAR</Typography>
       <Typography className="landing-page__header">
         {!fetching ? "Click Here to fetch Git Data" : "Fetching..."}
       </Typography>

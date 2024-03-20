@@ -1,7 +1,7 @@
 .landing-page {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
   font-family: var(--font);
   color: var(--primary-clr);
 
@@ -10,9 +10,15 @@
     border: 1px solid var(--tertary-clr) !important;
     color: var(--primary-clr) !important;
     box-shadow: 0px 0px 10px var(--tertary-clr), 0px 0px 10px var(--tertary-clr);
+    max-width: fit-content;
+    padding: 8px !important;
   }
 
   &__button:hover {
     box-shadow: 0px 0px 20px var(--tertary-clr), 0px 0px 20px var(--tertary-clr);
+  }
+
+  &__my-name {
+    color: var(--tertary-clr);
   }
 }
