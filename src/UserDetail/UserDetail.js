@@ -54,7 +54,7 @@ const UserDetail = () => {
       {Boolean(Object.keys(userData).length) ? (
         <>
           <Typography className="user-detail__header" variant="h4">
-            {userData.name}
+            {userData?.name || userData?.login}
           </Typography>
           <Box className="user-detail__detail-wrapper">
             <img
