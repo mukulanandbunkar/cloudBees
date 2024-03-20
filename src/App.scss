@@ -6,5 +6,8 @@
   overflow: auto;
   background: var(--secondary-clr);
   font-family: var(--font);
+  &__img{
+    height: 100%;
+  }
 }
 
