@@ -1,0 +1,18 @@
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: var(--font);
+  color: var(--primary-clr);
+
+  &__button {
+    background-color: var(--secondary-clr) !important;
+    border: 1px solid var(--tertary-clr) !important;
+    color: var(--primary-clr) !important;
+    box-shadow: 0px 0px 10px var(--tertary-clr), 0px 0px 10px var(--tertary-clr);
+  }
+
+  &__button:hover {
+    box-shadow: 0px 0px 20px var(--tertary-clr), 0px 0px 20px var(--tertary-clr);
+  }
+}

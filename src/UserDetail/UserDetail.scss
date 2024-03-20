@@ -1,0 +1,61 @@
+.user-detail {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--secondary-clr);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: flex-start;
+  align-items: center;
+  gap: 40px;
+  &__heading {
+    color: var(--primary-clr);
+    &__span {
+      color: var(--tertary-clr);
+      font-size: 75px;
+    }
+  }
+  &__header {
+    text-align: center;
+    color: var(--tertary-clr);
+  }
+  &__detail-wrapper {
+    height: 60vh;
+    width: 55vw;
+    border: 1px solid var(--tertary-clr);
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    gap: 48px;
+    justify-content: center;
+    box-shadow: 0px 0px 15px var(--tertary-clr), 0px 0px 15px var(--tertary-clr);
+    &__img {
+      border-radius: 50%;
+      box-shadow: 0px 0px 8px var(--tertary-clr), 0px 0px 8px var(--tertary-clr);
+      padding: 6px;
+      height: 300px;
+    }
+    &__table {
+      text-transform: capitalize;
+      gap: 10px;
+      border-collapse: collapse;
+      border-spacing: 0px;
+      border-color: var(--tertary-clr);
+      &__row {
+        margin-bottom: 20px;
+        &__key {
+          color: var(--tertary-clr);
+          min-width: 175px;
+          word-wrap: break-word;
+        }
+        &__value {
+          color: var(--primary-clr);
+          text-transform: unset;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          max-width: 209px;
+        }
+      }
+    }
+  }
+}
