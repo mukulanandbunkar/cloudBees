@@ -36,9 +36,6 @@ const StaticData = {
   getLabel: (key) => key.split("_").join(" "),
   isUrl: ["html_url"],
   isUTC: ["updated_at", "created_at"],
-  payload: {
-    authKey: "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",
-  },
   headers: {
     "X-GitHub-Api-Version": "2022-11-28",
   },

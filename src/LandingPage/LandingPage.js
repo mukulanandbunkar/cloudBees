@@ -2,7 +2,7 @@ import LoadingButton from "@mui/lab/LoadingButton";
 import AutoModeIcon from "@mui/icons-material/AutoMode";
 import { Box, Typography } from "@mui/material";
 import { useState } from "react";
-import { Octokit } from "octokit";
+import axios from "axios";
 import "./LandingPage.scss";
 import { useNavigate } from "react-router-dom";
 import StaticData from "../Services/Static";
@@ -16,8 +16,10 @@ const LadingPage = (props) => {
 
   const FetchUserList = async () => {
     setFectching(true);
-    const octokit = new Octokit(payload);
-    const resquestData = await octokit.request("GET /users", headers);
+    const resquestData = await axios.get(
+      "https://api.github.com/users",
+      headers
+    );
     try {
       console.log(resquestData);
       setUserList([...resquestData.data]);

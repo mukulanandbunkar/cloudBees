@@ -1,11 +1,11 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import UserList from "./UserList/UserList";
 import UserDetail from "./UserDetail/UserDetail";
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/*",
     element: <App />,

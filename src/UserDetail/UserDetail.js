@@ -2,11 +2,10 @@ import { Box, Typography, IconButton } from "@mui/material";
 import "./UserDetail.scss";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { Octokit } from "octokit";
 import StaticData from "../Services/Static";
 import CottageIcon from "@mui/icons-material/Cottage";
 
-const octokit = new Octokit(StaticData.payload);
+import axios from "axios";
 const headers = StaticData.headers;
 
 const UserDetail = () => {
@@ -22,10 +21,12 @@ const UserDetail = () => {
 
   const fetchUserDetail = async () => {
     try {
-      const response = await octokit.request("GET /users/{username}", {
-        username: userDetail,
-        headers,
-      });
+      const response = await axios.get(
+        `https://api.github.com/users/${userDetail}`,
+        {
+          headers,
+        }
+      );
       setUserDate(response.data);
     } catch (error) {
       console.log(error);
